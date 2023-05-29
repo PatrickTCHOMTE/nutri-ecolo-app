@@ -7,6 +7,5 @@ conn = st.experimental_connection('s3', type=FilesConnection)
 df = conn.read("nutri-ecolo-app-data/open_food_data_final_cleaned.csv", input_format="csv")
 
 # Display a dataframe as an interactive table
-st.dataframe(df, None, 200)
+st.dataframe(df, use_container_width=True)
 
-# Print results.
