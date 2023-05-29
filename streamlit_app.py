@@ -1,5 +1,6 @@
 import streamlit as st
 from st_files_connection import FilesConnection
+import skimpy as skim
 
 # Create connection object and retrieve file contents.
 # Specify input format is a csv and to cache the result for 600 seconds.
@@ -8,4 +9,5 @@ df = conn.read("nutri-ecolo-app-data/open_food_data_final_cleaned.csv", input_fo
 
 # Display a dataframe as an interactive table
 st.dataframe(df, use_container_width=True)
+st.write(skim(df))
 
