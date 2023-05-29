@@ -1,4 +1,2 @@
-# .streamlit/secrets.toml
-AWS_ACCESS_KEY_ID = "AKIARYFW7QAULG6NYMIS"
-AWS_SECRET_ACCESS_KEY = "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"
-AWS_DEFAULT_REGION = "eu-west-3"
+# Streamlit specific
+secrets.toml
